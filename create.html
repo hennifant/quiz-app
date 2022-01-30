@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script defer src="./scripts/create.js"></script>
+  </head>
+  <body class="app-grid viewportheight">
+    <header class="p-auto padding-15 bg-green">Neue Frage</header>
+    <main class="app-grid__scrollarea bg-pastel">
+      <form class="create">
+        <section>
+          <label for="add-question" class="create__headings">
+            <h2>Frage erstellen:</h2>
+            <button>
+              <output data-js="outputQuestion"
+                >200 Buchstaben verbleiben
+              </output>
+            </button>
+            <textarea
+              data-js="textareaQuestion"
+              name="add-question"
+              id="add-question"
+              cols="30"
+              rows="10"
+              maxlength="200"
+              placeholder="Frage eingeben..."
+              required
+            >
+            </textarea>
+          </label>
+        </section>
+        <section>
+          <h2>Antwort erstellen:</h2>
+          <button>
+            <output data-js="outputAnswer">200 Buchstaben verbleiben </output>
+          </button>
+          <textarea
+            data-js="textareaAnswer"
+            name="add-answer"
+            id="add-answer"
+            cols="30"
+            rows="10"
+            placeholder="Antwort eingeben..."
+            required
+          ></textarea>
+        </section>
+        <section>
+          <h2>Antwortmöglichkeiten:</h2>
+          <textarea
+            name="add-tags"
+            id="add-tags"
+            cols="30"
+            rows="5"
+            placeholder="Antwortmöglichkeiten getrennt durch Kommas..."
+            required
+          ></textarea>
+        </section>
+        <button class="button__action">Übermitteln</button>
+      </form>
+    </main>
+    <nav class="app-grid__nav bg-ochre">
+      <a href="index.html"><img src="./images/home.svg" alt="home" /></a>
+      <a href="bookmark.html"
+        ><img src="./images/bookmark.svg" alt="bookmarks"
+      /></a>
+      <a href="create.html" class="active"
+        ><img src="./images/create.svg" alt="create"
+      /></a>
+      <a href="profile.html"
+        ><img src="./images/profile.svg" alt="profile"
+      /></a>
+    </nav>
+  </body>
+</html>

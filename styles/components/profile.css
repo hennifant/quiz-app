@@ -1,0 +1,43 @@
+.profilearea {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  display: grid;
+}
+
+.profilearea__img {
+  border-radius: 50%;
+}
+
+.profilearea__centered {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  position: static;
+  height: 40px;
+}
+
+.profilearea__centered-list {
+  margin: 30px 30px;
+  list-style: none;
+  color: var(--color-dark-blue);
+}
+
+.profilearea__centered-first {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 16px;
+  margin: 2px 0px;
+  border: 0px;
+  padding-bottom: 6px;
+}
+
+.profilearea__centered-last {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 16px;
+  margin: 2px 0px;
+  border: 0px;
+}
