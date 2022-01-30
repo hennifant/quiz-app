@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script type="module" defer src="./index.js"></script>
+  </head>
+  <body class="app-grid viewportheight">
+    <header class="p-auto padding-15 bg-green">Profil</header>
+    <main class="app-grid__scrollarea bg-pastel profilearea">
+      <div class="profilearea__centered">
+        <img
+          class="profilearea__img"
+          src="./images/hennifant.jpg"
+          alt="profile-foto"
+          width="120"
+          height="120"
+        />
+        <ul class="profilearea__centered-list unstyled-list">
+          <li class="profilearea__centered-first">Henning</li>
+          <li class="profilearea__centered-last">Schwichow</li>
+        </ul>
+      </div>
+      <section>
+        <h2>Über mich:</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsa,
+          beatae velit ex totam molestias at facilis asperiores, eaque eligendi
+          accusamus aperiam a nemo, reprehenderit ea quibusdam voluptates.
+          Nulla, sint.
+        </p>
+      </section>
+      <section>
+        <h2>Skills</h2>
+        <ul role="list" class="flex justify-evenly gap-5">
+          <li class="padding">Tag 1</li>
+          <li class="padding">Tag 2</li>
+          <li class="padding">Tag 3</li>
+          <li class="padding">Tag 4</li>
+        </ul>
+      </section>
+      <button class="button__action">Ausloggen</button>
+    </main>
+    <nav class="app-grid__nav bg-ochre">
+      <a href="index.html"><img src="./images/home.svg" alt="home" /></a>
+      <a href="bookmark.html"
+        ><img src="./images/bookmark.svg" alt="bookmarks"
+      /></a>
+      <a href="create.html"><img src="./images/create.svg" alt="create" /></a>
+      <a href="profile.html" class="active"
+        ><img src="./images/profile.svg" alt="profile"
+      /></a>
+    </nav>
+  </body>
+</html>

@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="./styles/index.css" />
-    <script type="module" defer src="index.js"></script>
+    <script type="module" defer src="./index.js"></script>
   </head>
   <body class="app-grid viewportheight">
-    <h1 class="app-grid__header padding-15 bg-green">Quiz-App</h1>
+    <header class="p-auto padding-15 bg-green">Lesezeichen</header>
     <main class="app-grid__scrollarea bg-pastel">
       <article data-js="card" class="card position-relative p-20 margin-20">
         <button data-js="bookmark-button" class="position-absolute bookmark">
@@ -74,46 +74,10 @@
           <li class="padding margin-auto">Leckermäulchen</li>
         </ul>
       </article>
-      <article data-js="card" class="card position-relative p-20 margin-20">
-        <button data-js="bookmark-button" class="position-absolute bookmark">
-          <svg
-            data-js="bookmark"
-            xmlns="http://www.w3.org/2000/svg"
-            width="35"
-            height="35"
-            fill="var(--color-green)"
-            stroke="var(--color-green-light)"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"
-            />
-          </svg>
-        </button>
-
-        <h2>Frage:</h2>
-        <p class="marginleft-20">
-          Welche Gürtelfarbe existiert nicht im Kampfsport Karate?
-        </p>
-
-        <button data-js="answerbutton" class="button__action">
-          Antwort anzeigen
-        </button>
-        <p data-js="answertext" class="card__hide">Rot</p>
-
-        <ul role="list" class="flex flex-wrap gap-5 justify-evenly">
-          <li class="padding margin-auto">Schwarz</li>
-          <li class="padding margin-auto">Weiß</li>
-          <li class="padding margin-auto">Braun</li>
-          <li class="padding margin-auto">Rot</li>
-        </ul>
-      </article>
     </main>
     <nav class="app-grid__nav bg-ochre">
-      <a href="index.html" class="active"
-        ><img src="./images/home.svg" alt="home"
-      /></a>
-      <a href="bookmark.html"
+      <a href="index.html"><img src="./images/home.svg" alt="home" /></a>
+      <a href="bookmark.html" class="active"
         ><img src="./images/bookmark.svg" alt="bookmarks"
       /></a>
       <a href="create.html"><img src="./images/create.svg" alt="create" /></a>
