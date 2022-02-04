@@ -10,7 +10,9 @@
   </head>
   <body class="app-grid viewportheight">
     <h1 class="app-grid__header padding-15 bg-green">Quiz-App</h1>
-    <main class="app-grid__scrollarea bg-pastel">
+    <!-- -->
+    <!-- -->
+    <main class="app-grid__scrollarea bg-pastel" data-page="home">
       <article
         data-js="card"
         class="card position-relative padding-20 margin-20"
@@ -36,12 +38,7 @@
         <button data-js="answerbutton" class="button__action">
           Antwort anzeigen
         </button>
-        <p
-          data-js="answertext"
-          class="card__hide card__hide-text padding margin-auto"
-        >
-          Bremen
-        </p>
+        <p data-js="answertext" class="card__hide">Bremen</p>
 
         <ul role="list" class="flex flex-wrap gap-5 justify-evenly">
           <li class="padding margin-auto">Berlin</li>
@@ -76,12 +73,7 @@
         <button data-js="answerbutton" class="button__action">
           Antwort anzeigen
         </button>
-        <p
-          data-js="answertext"
-          class="card__hide card__hide-text padding margin-auto"
-        >
-          Gourmet
-        </p>
+        <p data-js="answertext" class="card__hide">Gourmet</p>
 
         <ul role="list" class="flex flex-wrap gap-5 justify-evenly">
           <li class="padding margin-auto">Gourmet</li>
@@ -118,12 +110,7 @@
         <button data-js="answerbutton" class="button__action">
           Antwort anzeigen
         </button>
-        <p
-          data-js="answertext"
-          class="card__hide card__hide-text padding margin-auto"
-        >
-          Rot
-        </p>
+        <p data-js="answertext" class="card__hide">Rot</p>
 
         <ul role="list" class="flex flex-wrap gap-5 justify-evenly">
           <li class="padding margin-auto">Schwarz</li>
@@ -133,17 +120,27 @@
         </ul>
       </article>
     </main>
-    <nav class="app-grid__nav bg-ochre">
-      <a href="index.html" class="active"
-        ><img src="./images/home.svg" alt="home"
-      /></a>
-      <a href="bookmark.html"
-        ><img src="./images/bookmark.svg" alt="bookmarks"
-      /></a>
-      <a href="create.html"><img src="./images/create.svg" alt="create" /></a>
-      <a href="profile.html"
-        ><img src="./images/profile.svg" alt="profile"
-      /></a>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-ochre">
+      <section data-nav="home" class="active app-grid__nav">
+        <a href="index.html" class="active"
+          ><img src="./images/home.svg" alt="home"
+        /></a>
+      </section>
+      <section data-nav="bookmark" class="app-grid__nav">
+        <a href="bookmark.html"
+          ><img src="./images/bookmark.svg" alt="bookmarks"
+        /></a>
+      </section>
+      <section data-nav="create" class="app-grid__nav">
+        <a href="create.html"><img src="./images/create.svg" alt="create" /></a>
+      </section>
+      <section data-nav="profile" class="app-grid__nav">
+        <a href="profile.html"
+          ><img src="./images/profile.svg" alt="profile"
+        /></a>
+      </section>
     </nav>
   </body>
 </html>
