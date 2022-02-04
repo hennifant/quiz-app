@@ -1,0 +1,27 @@
+.button__action {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 15px;
+  text-decoration: none;
+  color: var(--color-dark-blue);
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border-radius: 15px;
+  border: 2px solid var(--color-green-light);
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 var(--color-dark-blue);
+}
+
+.button__action:hover {
+  color: var(--color-green-light);
+  box-shadow: inset 0 -100px 0 0 var(--color-dark-blue);
+}
+
+/.button__action:active {
+  transform: scale(0.9);
+}

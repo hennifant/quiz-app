@@ -2,8 +2,9 @@
 @import './colors.css';
 @import './utilities.css';
 
-@import './components/app-grid.css';
-@import './components/nav.css';
-/* @import "./components/card.css"; */
-@import './components/profile.css';
-@import './components/create.css';
+@import '/components/App-grid.css';
+@import '/components/Button.css';
+@import '/components/Nav.css';
+@import '/components/Card.css';
+@import '/components/Profile.css';
+@import '/components/Create.css';

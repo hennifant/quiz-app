@@ -1,4 +1,4 @@
-import Card from './scripts/Card.js';
+import Card from './Card.js';
 
 const allCardElements = document.querySelectorAll('[data-js="card"]');
 

@@ -8,10 +8,12 @@ export default function Card(cardElement) {
     bookmarkIcon.classList.toggle('bookmark__saved');
   });
 
+  // Button for answers
+
   const answerbutton = cardElement.querySelector('[data-js="answerbutton"]');
   const txtAnswer = cardElement.querySelector('[data-js="answertext"]');
 
-  answerbutton.addEventListener('click', () => {
+  answerbutton?.addEventListener('click', () => {
     answerbutton.textContent =
       answerbutton.textContent === 'Antwort anzeigen'
         ? 'Antwort verstecken'
